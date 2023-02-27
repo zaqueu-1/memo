@@ -3,6 +3,7 @@ import List from '../List/List'
 import './board.css'
 import { MdAddCircle } from 'react-icons/md'
 import { AppConsumer } from '../../Contexts/appContext'
+import { toast } from 'react-toastify'
 
 
 function Board() {
@@ -35,6 +36,7 @@ function Board() {
     }
 
     setTodoArray([...todoArray, newTask])
+    toast.success('Tarefa adicionada!')
     localStorage.setItem('todo', JSON.stringify([...todoArray, newTask]))
     setText('')
   }

@@ -3,6 +3,7 @@ import './card.css'
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
 import { RiDeleteBin2Fill } from 'react-icons/ri'
 import { AppConsumer } from '../../Contexts/appContext'
+import { toast } from 'react-toastify'
 
 function Card({ taskId, taskText, taskStatus }) {
 
@@ -19,6 +20,7 @@ function Card({ taskId, taskText, taskStatus }) {
     let updatedTask = todoArray.filter((task) => task.id !== taskId)
 
     setTodoArray(updatedTask)
+    toast.error('Tarefa excluída!')
     localStorage.setItem('todo', JSON.stringify(updatedTask))
   }
 

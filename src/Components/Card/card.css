@@ -69,10 +69,10 @@
     margin: 0 -1rem;
     cursor: pointer;
     color: white;
-    animation: show 1s;
+    animation: show 0.8s;
 }
 
 @keyframes show {
-    0%   {opacity: 0; transform: scale(0);}
+    0%   {opacity: 0; transform: translateX(10px) scale(0.5)}
     100% {opacity: 1; transform: scale(1);}
   }
