@@ -1,0 +1,78 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-text {
+    max-width: 85%;
+    overflow-wrap: break-word; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text:hover{
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.arrow {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+.delete-btn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+    animation: vibe 1s infinite;
+}
+
+@keyframes vibe {
+    0%   {rotate: 0}
+    50% {rotate: 20deg}
+    100% {rotate: 0}
+  }
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    padding: .7rem;
+    gap: .7rem;
+    outline: none;
+    border: none;
+    border-radius: 0 18px 18px 0;
+    background-color: rgba(0, 0, 0, 0.3);;
+    margin: 0 -1rem;
+    cursor: pointer;
+    color: white;
+    animation: show 1s;
+}
+
+@keyframes show {
+    0%   {opacity: 0; transform: scale(0);}
+    100% {opacity: 1; transform: scale(1);}
+  }

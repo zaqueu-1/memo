@@ -1,0 +1,52 @@
+.newtask-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 45px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px dashed #33333383;
+    border-radius: 18px;
+    background-color: white;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+}
+
+.newtask-input {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: #333333;
+}
+
+.add-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.add-icon {
+    font-size: 1.6rem;
+    color: #777777;
+    transition: all 0.4s;
+}
+
+.add-icon:hover {
+    color: #333333;
+}
+
+.board-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: calc(100% - 10rem);
+}
