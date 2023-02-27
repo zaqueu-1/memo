@@ -25,8 +25,8 @@
 }
 
 .arrow {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     transition: all 0.4s;
 }
@@ -37,14 +37,15 @@
 }
 
 .delete-btn {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
     transition: all 0.4s;
 }
 
 .delete-btn:hover {
     transform: scale(1.2);
+    color: rgb(251, 173, 173);
     animation: vibe 1s infinite;
 }
 
@@ -60,7 +61,8 @@
     align-items: center;
     justify-content: center;
     height: 120px;
-    padding: .7rem;
+    padding: .6rem;
+    max-width: 2.2rem;
     gap: .7rem;
     outline: none;
     border: none;
