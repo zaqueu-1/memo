@@ -6,7 +6,8 @@
 }
 
 .card-text {
-    max-width: 85%;
+    max-width: 300px;
+    max-height: 120px;
     overflow-wrap: break-word; 
     white-space: nowrap;
     overflow: hidden;

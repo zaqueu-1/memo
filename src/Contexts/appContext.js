@@ -6,7 +6,6 @@ const AppProvider = ({ children }) => {
     const [text, setText] = useState('')
     const [todoArray, setTodoArray] = useState([])
 
- 
     return (
         <AppContext.Provider value={{
             text,
