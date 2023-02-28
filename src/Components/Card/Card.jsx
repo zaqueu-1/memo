@@ -3,6 +3,7 @@ import './card.css'
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
 import { RiDeleteBin2Fill } from 'react-icons/ri'
 import { AppConsumer } from '../../Contexts/appContext'
+import { motion } from 'framer-motion'
 
 
 function Card({ taskId, taskText, taskStatus }) {
@@ -95,7 +96,11 @@ function Card({ taskId, taskText, taskStatus }) {
   }
 
   return (
-    <div className='card-container' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <motion.div initial={{ x: -20, opacity: 0 }} 
+                animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }}  
+                className='card-container' 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave}>
       <p key={taskId} className={ taskStatus === 'done' ? 'card-text done' : 'card-text'}>
         {taskText}
       </p>
@@ -125,7 +130,7 @@ function Card({ taskId, taskText, taskStatus }) {
                 </div>}
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
 

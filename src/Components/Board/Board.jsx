@@ -53,11 +53,11 @@ function Board() {
     <div className='input-container'>
       <div className='newtask-container'>
         <input type="text" 
-                className="newtask-input" 
-                placeholder='digite uma tarefa' 
-                value={text} 
-                onChange={(e) => setText(e.target.value)}
-                maxLength='94' >
+                      className="newtask-input" 
+                      placeholder='digite uma tarefa' 
+                      value={text} 
+                      onChange={(e) => setText(e.target.value)}
+                      maxLength='94' >
         </input>
         <button className="add-btn" onClick={(e) => handleSubmit(e)}><MdAddCircle className='add-icon'/></button>
       </div>
@@ -73,11 +73,13 @@ function Board() {
       </div>
     </div>
 
-    <div className='board-container'>
+    <motion.div initial={{ y: 15, opacity: 0 }} 
+                animate={{ y: 0, opacity: 1, transition: { duration: 0.7 } }} 
+                className='board-container'>
       <List type={'a fazer'} array={todoArray} />
       <List type={'fazendo'} array={todoArray}/>
       <List type={'finalizadas'} array={todoArray}/>
-    </div>
+    </motion.div>
     </>
   )
 }
