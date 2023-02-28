@@ -14,7 +14,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 https://memo-blond.vercel.app/
 
 ## 🖼️ Demonstração
-![demo](https://github.com/zaqueu-1/nutrispace/blob/main/github/chrome-capture-2023-1-12.gif)
+![demo](https://github.com/zaqueu-1/memo/blob/main/github/memo-demo.gif)
 
 ## ✍️ Sobre o autor
 Desenvolvedor front-end, 27 anos, Rio de Janeiro/RJ
