@@ -18,3 +18,10 @@
     text-shadow: 0px 0px 30px #FFFFFF;
     color: rgb(72, 72, 72);
 }
+
+@media screen and (max-width: 899px) {
+    .hero-container h4 {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}

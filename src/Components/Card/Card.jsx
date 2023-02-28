@@ -4,14 +4,10 @@ import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-ico
 import { RiDeleteBin2Fill } from 'react-icons/ri'
 import { AppConsumer } from '../../Contexts/appContext'
 
+
 function Card({ taskId, taskText, taskStatus }) {
 
-  const {text,
-        setText,
-        todoArray,
-        setTodoArray} = AppConsumer()
-
-  const [taskstatus, setTaskStatus] = useState(taskStatus);
+  const {todoArray, setTodoArray} = AppConsumer()
 
   function handleDelete(e) {
     e.preventDefault();

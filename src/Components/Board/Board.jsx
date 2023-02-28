@@ -50,7 +50,7 @@ function Board() {
 
   return (
     <>
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+    <div className='input-container'>
       <div className='newtask-container'>
         <input type="text" 
                 className="newtask-input" 
@@ -63,13 +63,13 @@ function Board() {
       </div>
       <div style={{height: '.5rem', marginBottom: '.5rem'}}>
         {newTaskWarning && <motion.p initial={{ x: -10, opacity: 0 }} 
-                                  animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }} 
-                                  exit={{ x:10, opacity: 0 }}
-                                  className="task-warning">tarefa adicionada!</motion.p>}
+                                     animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }} 
+                                     exit={{ x:10, opacity: 0 }}
+                                     className="task-warning">tarefa adicionada!</motion.p>}
         {validationWarning && <motion.p initial={{ x: -10, opacity: 0 }} 
-                                  animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }} 
-                                  exit={{ x:10, opacity: 0 }}
-                                  className="validation-warning">digite no mínimo 4 caracteres!</motion.p>}
+                                        animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }} 
+                                        exit={{ x:10, opacity: 0 }}
+                                        className="validation-warning">digite no mínimo 4 caracteres!</motion.p>}
       </div>
     </div>
 

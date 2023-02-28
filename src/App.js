@@ -7,10 +7,10 @@ import './app.css'
 function App() {
   return (
     <>
-    <AnimatePresence>
-      <Hero />
-      <Board />
-    </AnimatePresence>
+      <AnimatePresence>
+        <Hero />
+        <Board />
+      </AnimatePresence>
     </>
   );
 }

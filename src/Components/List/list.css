@@ -1,7 +1,9 @@
 .list-container {
     padding: 0;
-    margin: 1rem auto;
-    width: 100%;
+    margin: 1rem 0;
+    width: 100vw;
+    min-width: 280px;
+    max-width: 400px;
 }
 
  h2 {
@@ -18,7 +20,7 @@
     display: none;
 }
 
-ul {
+.list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,10 +30,10 @@ ul {
     border: 1px solid #FFFFFF;
     box-shadow: 0px 439px 268px rgba(0, 0, 0, 0.06), 0px 202.963px 123.905px rgba(0, 0, 0, 0.0445005), 0px 116.131px 70.8953px rgba(0, 0, 0, 0.0376069), 0px 70.4906px 43.033px rgba(0, 0, 0, 0.0323969), 0px 42.4737px 25.9293px rgba(0, 0, 0, 0.0276031), 0px 23.6521px 14.4391px rgba(0, 0, 0, 0.0223931), 0px 10.1726px 6.21015px rgba(0, 0, 0, 0.0154995);
     border-radius: 40px;
-    width: 90%;
-    min-width: 270px;
+    max-width: 350px;
+    min-width: 280px;
     height: 24rem;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 #list-title {
@@ -51,7 +53,7 @@ ul {
     padding: .5rem 1rem;
     font-size: 1rem;
     outline: none;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 18px;
     background-color: rgba(220, 220, 220, 0.5);
     margin: 0 auto .5rem auto;
